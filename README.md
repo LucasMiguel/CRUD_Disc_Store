@@ -3,7 +3,7 @@
 
 CRUD feito em C#/.NET com Entity Framework.
 
-#Instalação
+## Instalação
 
 Para primeiro compilação, antes de executar o projeto é necessário inicializar o banco de dados Entity.
 
