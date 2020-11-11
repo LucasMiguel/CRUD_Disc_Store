@@ -4,16 +4,19 @@
     ViewData["Title"] = "Lista de Discos";
 }
 
-<h1>Coleção de Disco</h1>
+
+<div class="d-flex justify-content-center">
+    <div class="titlePage form-text"><h1>Coleção de Discos</h1></div>
+</div>
 <div class="text-center"><hr class="divisorBar" /></div>
 <p class="text-center">
     <a class="btn btnAdd" asp-action="Create">
         <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.927 17.687l-.125 1c-2.648-.756-4.731-2.839-5.488-5.488l1-.125c.682 2.195 2.418 3.93 4.613 4.613zm2.073 2.313c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9l-.008.15c.695.141 1.354.382 1.965.701.022-.282.043-.564.043-.851 0-6.075-4.925-11-11-11s-11 4.925-11 11 4.925 11 11 11c.287 0 .569-.021.852-.043-.32-.611-.561-1.27-.701-1.965l-.151.008zm0-6c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm0-1c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2zm-1.818 2.646c-1.293-.508-2.319-1.534-2.827-2.827l-1.025.128c.6 1.746 1.979 3.125 3.725 3.724l.127-1.025zm14.818 2.854c0 3.037-2.463 5.5-5.5 5.5s-5.5-2.463-5.5-5.5 2.463-5.5 5.5-5.5 5.5 2.463 5.5 5.5zm-3 1.5h-5v1h5v-1zm0-1l-2.5-3-2.5 3h5zm-5.354-9.818l1.025-.128c-.6-1.746-1.979-3.125-3.725-3.725l-.128 1.025c1.293.508 2.32 1.535 2.828 2.828zm3.041-.38c-.756-2.649-2.839-4.732-5.488-5.489l-.125 1c2.195.682 3.931 2.418 4.613 4.613l1-.124z" /></svg>
         </span>
-        Novo Disco</a>
+        Novo Disco
+    </a>
 </p>
-
 
 <table class="table table-striped table-dark">
     <thead>
@@ -48,10 +51,25 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Genre)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.DiscID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DiscID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DiscID">Delete</a>
+            <td class="text-right">
+                <a asp-action="Edit" asp-route-id="@item.DiscID" title="Editar">
+                    <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="btnList btnListEdit bi bi-pencil-square" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                    </svg>
+                </a> -
+                <a asp-action="Details" asp-route-id="@item.DiscID" title="Detalhes">
+                    <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="btnList btnListDetails bi bi-card-heading" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                        <path fill-rule="evenodd" d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                        <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z" />
+                    </svg>
+                 </a> -
+                <a asp-action="Delete" asp-route-id="@item.DiscID" title="Deletar">
+                    <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="btnList btnListDel bi bi-trash-fill" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                    </svg>
+                </a>
             </td>
         </tr>
 }
