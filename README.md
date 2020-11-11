@@ -5,15 +5,15 @@ CRUD feito em C#/.NET com Entity Framework.
 
 ## Instalação
 
-Para primeiro compilação, antes de executar o projeto é necessário inicializar o banco de dados Entity.
+Para primeiro execução, antes de executar o projeto é necessário inicializar o banco de dados Entity.
 
-Para isso após abrir o projeto no Visual Studio vá na opção "Ferramentas -> Gerenciador de pacotes NuGet -> Console do Gerenciado de Pacotes"
+Para isso, após abrir o projeto no Visual Studio, vá na opção "Ferramentas -> Gerenciador de pacotes NuGet -> Console do Gerenciado de Pacotes"
 
-Após abrir o console insira os dois comandos
+Após abrir o console insira o comando:
 
 ```bash
 
-Add-Migration InitialCreate 
+> Add-Migration InitialCreate 
 
 ```
 
@@ -21,10 +21,10 @@ Depois de concluído execute
 
 ```bash
 
-update-database
+> update-database
 
 ```
 
-Agora execute normalmente a aplicação.
+Após a finalização execute normalmente a aplicação.
 
 
