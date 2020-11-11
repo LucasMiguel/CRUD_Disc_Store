@@ -24,7 +24,7 @@ namespace CRUD_Disc_Store.Controllers
             return View(await _context.Discs.ToListAsync());
         }
 
-        // GET: Discs/Details/5
+        // GET: Discs/Details
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -48,9 +48,7 @@ namespace CRUD_Disc_Store.Controllers
             return View();
         }
 
-        // POST: Discs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Discs/Create        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("DiscID,Title,Author,Genre")] Discs discs)
@@ -80,9 +78,7 @@ namespace CRUD_Disc_Store.Controllers
             return View(discs);
         }
 
-        // POST: Discs/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Discs/Edit.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("DiscID,Title,Author,Genre")] Discs discs)
@@ -115,7 +111,7 @@ namespace CRUD_Disc_Store.Controllers
             return View(discs);
         }
 
-        // GET: Discs/Delete/5
+        // GET: Discs/Delete
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -133,7 +129,7 @@ namespace CRUD_Disc_Store.Controllers
             return View(discs);
         }
 
-        // POST: Discs/Delete/5
+        // POST: Discs/Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

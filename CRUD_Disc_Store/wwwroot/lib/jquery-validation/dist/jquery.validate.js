@@ -166,7 +166,8 @@ $.extend( $.fn, {
 			case "add":
 				$.extend( existingRules, $.validator.normalizeRule( argument ) );
 
-				// Remove messages from rules, but allow them to be set separately
+					// Remove 
+					from rules, but allow them to be set separately
 				delete existingRules.messages;
 				staticRules[ element.name ] = existingRules;
 				if ( argument.messages ) {
@@ -360,7 +361,7 @@ $.extend( $.validator, {
 	},
 
 	messages: {
-		required: "This field is required.",
+		required: "O campo é requerido",
 		remote: "Please fix this field.",
 		email: "Please enter a valid email address.",
 		url: "Please enter a valid URL.",

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\Documents\\Projeto Vaga\\CRUD\\CRUD_Disc_Store\\CRUD_Disc_Store\\CRUD_Disc_Store.csproj": {}
+    "X:\\CPD\\_Lucas Miguel\\Meus Documentos\\Aprendendo C#\\CRUD_Disc_Store\\CRUD_Disc_Store\\CRUD_Disc_Store.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\Documents\\Projeto Vaga\\CRUD\\CRUD_Disc_Store\\CRUD_Disc_Store\\CRUD_Disc_Store.csproj": {
+    "X:\\CPD\\_Lucas Miguel\\Meus Documentos\\Aprendendo C#\\CRUD_Disc_Store\\CRUD_Disc_Store\\CRUD_Disc_Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\Documents\\Projeto Vaga\\CRUD\\CRUD_Disc_Store\\CRUD_Disc_Store\\CRUD_Disc_Store.csproj",
+        "projectUniqueName": "X:\\CPD\\_Lucas Miguel\\Meus Documentos\\Aprendendo C#\\CRUD_Disc_Store\\CRUD_Disc_Store\\CRUD_Disc_Store.csproj",
         "projectName": "CRUD_Disc_Store",
-        "projectPath": "C:\\Users\\lucas\\Documents\\Projeto Vaga\\CRUD\\CRUD_Disc_Store\\CRUD_Disc_Store\\CRUD_Disc_Store.csproj",
-        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\Documents\\Projeto Vaga\\CRUD\\CRUD_Disc_Store\\CRUD_Disc_Store\\obj\\",
+        "projectPath": "X:\\CPD\\_Lucas Miguel\\Meus Documentos\\Aprendendo C#\\CRUD_Disc_Store\\CRUD_Disc_Store\\CRUD_Disc_Store.csproj",
+        "packagesPath": "C:\\Users\\lucasm\\.nuget\\packages\\",
+        "outputPath": "X:\\CPD\\_Lucas Miguel\\Meus Documentos\\Aprendendo C#\\CRUD_Disc_Store\\CRUD_Disc_Store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lucasm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
