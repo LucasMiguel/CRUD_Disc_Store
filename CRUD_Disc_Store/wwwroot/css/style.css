@@ -1,0 +1,61 @@
+﻿h1 {
+    color: white;
+    margin: 50px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.divisorBar{
+    border: 2px solid white;
+    width: 15rem;
+}
+
+.back {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    animation: go-back 1s infinite alternate;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(10px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.btnAdd {
+    background: white;
+    color: black;
+    margin: 30px;
+    transition: all 400ms linear;
+}
+
+.btnAdd:hover {
+    transform: scale(1.2);
+    background: #FFFBFE;
+}
+
+.btnSave {
+    background: #4295B6;
+    color: white;
+    transition: all 400ms linear    
+}
+
+.btnSave:hover {
+    background: #0e7103;
+    color: white;
+    transform: scale(1.2);
+}
+
+.form{
+    margin:30px;
+}
+
+.form-group label{
+    color: white;
+}
+
