@@ -1,7 +1,7 @@
 # CRUD COLEÇÃO DE DISCOS
 
 
-CRUD feito em C#/.NET com Entity Framework.
+CRUD feito em C#/ASP.NETCore 5.0 e com Entity Framework Core 5.0
 
 ## Instalação
 
